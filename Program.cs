@@ -165,7 +165,7 @@ namespace Evaluation1_Yongjiang
             //Commandes instance and print list
             Commande commande1 = new Commande(client1);
             commande1.CommandeId = 10256;
-            commande1.CientId = client1.GetClientId();
+            commande1.ClientId = client1.GetClientId();
             commande1.EmployeId = 3;
             commande1.DateCommande = new DateTime(1996-07-15);
             commande1.DateRequise = new DateTime(1996-08-12);
@@ -178,7 +178,7 @@ namespace Evaluation1_Yongjiang
 
             Commande commande2 = new Commande(client2);
             commande2.CommandeId = 10261;
-            commande2.CientId = client2.GetClientId();
+            commande2.ClientId = client2.GetClientId();
             commande2.EmployeId = 4;
             commande2.DateCommande = new DateTime(1996-07-19);
             commande2.DateRequise = new DateTime(1996-08-16);
@@ -189,9 +189,10 @@ namespace Evaluation1_Yongjiang
             commande2.CodePostalEnvoi = "02389-673";
             commande2.PaysEnvoi = "Brazil";
 
+            /*
             Commande commande3 = new Commande(client3);
             commande3.CommandeId = 10264;
-            commande3.CientId = client3.GetClientId();
+            commande3.ClientId = client3.GetClientId();
             commande3.EmployeId = 6;
             commande3.DateCommande = new DateTime(1996-07-24);
             commande3.DateRequise = new DateTime(1996-08-21);
@@ -201,11 +202,27 @@ namespace Evaluation1_Yongjiang
             commande3.VilleEnvoi = "Bräcke";
             commande3.CodePostalEnvoi = "S-844 67";
             commande3.PaysEnvoi = "Sweden";
+            */
+            Commande commande3 = new Commande(
+                client3,
+                10264,
+                client3.GetClientId(),
+                6,
+                new DateTime(1996-07-24),
+                new DateTime(1996-08-21),
+                new DateTime(1996-08-23),
+                "Folk och fä HB",
+                "Åkergatan 24",
+                "Bräcke",
+                "S-844 67",
+                "Sweden"
+                );
+
 
             WriteLine("Commandes: \n----------------------------------------");
             WriteLine("{0}   {1}    {2}    {3}    {4}    {5}    {6}    {7}    {8}    {9}    {10}", 
                  commande1.CommandeId, 
-                 commande1.CientId,
+                 commande1.ClientId,
                  commande1.EmployeId,
                  commande1.DateCommande,
                  commande1.DateRequise,
@@ -218,7 +235,7 @@ namespace Evaluation1_Yongjiang
 
             WriteLine("{0}   {1}    {2}    {3}    {4}    {5}    {6}    {7}    {8}    {9}    {10}", 
                  commande2.CommandeId, 
-                 commande2.CientId,
+                 commande2.ClientId,
                  commande2.EmployeId,
                  commande2.DateCommande,
                  commande2.DateRequise,
@@ -229,9 +246,10 @@ namespace Evaluation1_Yongjiang
                  commande2.CodePostalEnvoi,
                  commande2.PaysEnvoi);
 
+            /*
             WriteLine("{0}   {1}    {2}    {3}    {4}    {5}    {6}    {7}    {8}    {9}    {10}", 
                  commande3.CommandeId, 
-                 commande3.CientId,
+                 commande3.ClientId,
                  commande3.EmployeId,
                  commande3.DateCommande,
                  commande3.DateRequise,
@@ -241,6 +259,20 @@ namespace Evaluation1_Yongjiang
                  commande3.VilleEnvoi,
                  commande3.CodePostalEnvoi,
                  commande3.PaysEnvoi);
+            */
+            
+            WriteLine("{0}   {1}    {2}    {3}    {4}    {5}    {6}    {7}    {8}    {9}    {10}", 
+                 commande3.GetCommandeId(), 
+                 commande3.GetClientId(),
+                 commande3.GetEmployeId(),
+                 commande3.GetDateCommande(),
+                 commande3.GetDateRequise(),
+                 commande3.GetDateEnvoi(),
+                 commande3.GetNomEnvoi(),
+                 commande3.GetAdresseEnvoi(),
+                 commande3.GetVilleEnvoi(),
+                 commande3.GetCodePostalEnvoi(),
+                 commande3.GetPaysEnvoi());
             
             ReadLine();
 
