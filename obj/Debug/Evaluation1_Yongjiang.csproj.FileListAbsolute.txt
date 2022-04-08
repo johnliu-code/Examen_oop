@@ -1,0 +1,8 @@
+C:\Users\atdig\source\repos\OOPCourse\Evaluation1_Yongjiang\bin\Debug\Evaluation1_Yongjiang.exe.config
+C:\Users\atdig\source\repos\OOPCourse\Evaluation1_Yongjiang\bin\Debug\Evaluation1_Yongjiang.exe
+C:\Users\atdig\source\repos\OOPCourse\Evaluation1_Yongjiang\bin\Debug\Evaluation1_Yongjiang.pdb
+C:\Users\atdig\source\repos\OOPCourse\Evaluation1_Yongjiang\obj\Debug\Evaluation1_Yongjiang.csproj.AssemblyReference.cache
+C:\Users\atdig\source\repos\OOPCourse\Evaluation1_Yongjiang\obj\Debug\Evaluation1_Yongjiang.csproj.SuggestedBindingRedirects.cache
+C:\Users\atdig\source\repos\OOPCourse\Evaluation1_Yongjiang\obj\Debug\Evaluation1_Yongjiang.csproj.CoreCompileInputs.cache
+C:\Users\atdig\source\repos\OOPCourse\Evaluation1_Yongjiang\obj\Debug\Evaluation1_Yongjiang.exe
+C:\Users\atdig\source\repos\OOPCourse\Evaluation1_Yongjiang\obj\Debug\Evaluation1_Yongjiang.pdb
